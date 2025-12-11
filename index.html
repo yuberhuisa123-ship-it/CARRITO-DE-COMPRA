@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Tienda-Jhuber</title>
+	<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+	<!-- =======================================
+	     BARRA DE NAVEGACIÓN
+	======================================= -->
+	<nav class="navbar">
+		<div class="navbar-container">
+			<h2 class="logo">Tienda Jhuber</h2>
+
+			<ul class="nav-links">
+				<li><a href="#inicio">Inicio</a></li>
+				<li><a href="#sobre-mi">Sobre mí</a></li>
+				<li><a href="#tienda">Tienda</a></li>
+				<li><a href="#contacto">Contacto</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- =======================================
+	     HEADER
+	======================================= -->
+	<header id="inicio">
+		<h1>Tienda-Jhuber</h1>
+
+		<div class="container-icon">
+			<div class="container-cart-icon">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" 
+					viewBox="0 0 24 24" stroke-width="1.5"
+					stroke="currentColor" class="icon-cart">
+					<path stroke-linecap="round" stroke-linejoin="round"
+						d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993
+						l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125
+						1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513
+						7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625
+						10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5
+						0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+				</svg>
+				<div class="count-products">
+					<span id="contador-productos">0</span>
+				</div>
+			</div>
+
+			<div class="container-cart-products hidden-cart">
+				<div class="row-product hidden">
+					<div class="cart-product">
+						<div class="info-cart-product">
+							<span class="cantidad-producto-carrito">1</span>
+							<p class="titulo-producto-carrito">Zapatos Nike</p>
+							<span class="precio-producto-carrito">$80</span>
+						</div>
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none"
+							viewBox="0 0 24 24" stroke-width="1.5"
+							stroke="currentColor" class="icon-close">
+							<path stroke-linecap="round" stroke-linejoin="round"
+								d="M6 18L18 6M6 6l12 12" />
+						</svg>
+					</div>
+				</div>
+
+				<div class="cart-total hidden">
+					<h3>Total:</h3>
+					<span class="total-pagar">$200</span>
+				</div>
+				<p class="cart-empty">El carrito está vacío</p>
+			</div>
+		</div>
+	</header>
+
+	<!-- =======================================
+	     SECCIÓN SOBRE MI
+	======================================= -->
+	<section id="sobre-mi" class="section">
+		<h2>Sobre mí</h2>
+		<p>Bienvenido a mi tienda. Aquí encontrarás productos de calidad y un excelente servicio.</p>
+	</section>
+
+	<!-- =======================================
+	     TIENDA
+	======================================= -->
+	<div id="tienda" class="container-items">
+		<!-- Tus items exactamente como estaban -->
+		<div class="item">
+			<figure>
+				<img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBME0Oc54zH1a-nz94faWZ2budqNA8ClPnkS5ONpLyPkhc41xTX73AcPHaHBlJqaG_Y8m_0qMPiZWAT3J3RFf1bC-HLCffbuPhxS-EzKZUPvRm0=w1920-h912?auditContext=forDisplay" alt="producto" />
+			</figure>
+			<div class="info-product">
+				<h2>Ensalada de frutas</h2>
+				<p class="price">$80</p>
+				<button class="btn-add-cart">Añadir al carrito</button>
+			</div>
+		</div>
+
+		<div class="item">
+			<figure>
+				<img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBPZewduPyli1YkSnhyFMgnwX7VIh-5L2jOw89IJVNS9jkzYAu8hdNDuiyQvGUi3R3D-vdl91ggnI2-HqWTVfWpFnVaVgYUvVYyegBi3KPZqiJA=w1920-h912?auditContext=forDisplay" alt="producto" />
+			</figure>
+			<div class="info-product">
+				<h2>Desayono saludable</h2>
+				<p class="price">$20</p>
+				<button class="btn-add-cart">Añadir al carrito</button>
+			</div>
+		</div>
+
+		<div class="item">
+			<figure>
+				<img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBMEi88045x_tQxCQ2gmeUJwcEshIwYwY7sKMF3mZwXIoQ9zz0ejag3HJGCIf5bJ7_omo1PnM_Xmtr_uR11lMceIH1p1K7NhmY8kVKBJ_cRqJE4=w1920-h912?auditContext=forDisplay" alt="producto" />
+			</figure>
+			<div class="info-product">
+				<h2>Clases de Cocina sana</h2>
+				<p class="price">$50</p>
+				<button class="btn-add-cart">Añadir al carrito</button>
+			</div>
+		</div>
+
+		<div class="item">
+			<figure>
+				<img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBP6dUmgueMkYOH2mXxMTS6sk6m5m0kI3olpykCwz3ciDSFX_o8f8tz6945kn6dIpioPGDSRg24jPg1Eo95MZVwYonzP_GAeadUucAgyxUmraFE=w1920-h912?auditContext=forDisplay" alt="producto" />
+			</figure>
+			<div class="info-product">
+				<h2>Libro de cocina </h2>
+				<p class="price">$90</p>
+				<button class="btn-add-cart">Añadir al carrito</button>
+			</div>
+		</div>
+
+		<div class="item">
+			<figure>
+				<img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBOVYjWYScKkCVRMHuHFkHcS6uonEP71zxtcHuWZBSoJcFMue99yenxksDzwelGcGpb_0zHIWfu5-bEevuSM5SM79oJbKUBPil8BDYuYO4nku9Y=w1920-h912?auditContext=forDisplay" alt="producto" />
+			</figure>
+			<div class="info-product">
+				<h2>Resatas a la parrila</h2>
+				<p class="price">$50</p>
+				<button class="btn-add-cart">Añadir al carrito</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- =======================================
+	     CONTACTO
+	======================================= -->
+	<section id="contacto" class="section">
+		<h2>Contacto</h2>
+		<p>Escríbeme a: <strong>jhubertienda@example.com</strong></p>
+	</section>
+
+	<script src="index.js"></script>
+</body>
+</html>
